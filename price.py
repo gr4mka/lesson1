@@ -17,8 +17,13 @@ print(product)
 def get_summ(one, two, delimiter ='&'):
     summ = str.upper(one) + delimiter + str.upper(two) #сложение с переводом строки в заглавные буквы(верхний регистр), либо использовать str.title для заглавных первых букв
     print (summ)
-data = {'one': 'learn', 'two': 'python'} # список с исходными данными для функции
+data = {'one': 'learn', 'two': 'python'} # словарь с исходными данными для функции
 result = get_summ(data['one'], data['two']) # выполнение функции для данного списка
 
 #Задание 2
-#........in process
+def format_price(price):
+    integer = str(int(price))
+    message = f'Цена: {integer} руб.'
+    print (message)
+price = 56.24
+format_price(price)
